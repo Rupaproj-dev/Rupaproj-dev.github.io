@@ -20,10 +20,10 @@
           </a>
 
           <div class="navbar-brand">
-            <a href="index.html"><h1>David Chu's China Bistro</h1></a>
+            <a href="index.html"><h1>David Chu's China Bistro Dieunel Restaurant</h1></a>
             <p>
-            <img src="images/star-k-logo.png" alt="Kosher certification">
-            <span>Kosher Certified</span>
+              <img src="images/star-k-logo.png" alt="Kosher certification">
+              <span>Kosher Certified</span>
             </p>
           </div>
 
@@ -34,23 +34,23 @@
             <span class="icon-bar"></span>
           </button>
         </div>
-
+        
         <div id="collapsable-nav" class="collapse navbar-collapse">
-          <ul id="nav-list" class="nav navbar-nav navbar-right">
-            <li id="navHomeButton" class="visible-xs">
+           <ul id="nav-list" class="nav navbar-nav navbar-right">
+            <li id="navHomeButton" class="visible-xs active">
               <a href="index.html">
                 <span class="glyphicon glyphicon-home"></span> Home</a>
             </li>
-            <li id="navMenuButton" ui-sref-active="active">
-              <a ui-sref="public.menu">
+            <li id="navMenuButton">
+              <a href="#" onclick="$dc.loadMenuCategories();">
                 <span class="glyphicon glyphicon-cutlery"></span><br class="hidden-xs"> Menu</a>
             </li>
             <li>
-              <a ui-sref="public.about">
+              <a href="#">
                 <span class="glyphicon glyphicon-info-sign"></span><br class="hidden-xs"> About</a>
             </li>
             <li>
-              <a ui-sref="public.awards">
+              <a href="#">
                 <span class="glyphicon glyphicon-certificate"></span><br class="hidden-xs"> Awards</a>
             </li>
             <li id="phone" class="hidden-xs">
@@ -62,20 +62,6 @@
       </div><!-- .container -->
     </nav><!-- #header-nav -->
   </header>
-
-  <div id="call-btn" class="visible-xs">
-    <a class="btn" href="tel:410-602-5008">
-      <span class="glyphicon glyphicon-earphone"></span>
-      410-602-5008
-    </a>
-  </div>
-  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
-
-  <ui-view>
-    <div class="text-center initial-loading">
-      <h2>Loading Site...</h2>
-    </div>
-  </ui-view>
 
   <div id="call-btn" class="visible-xs">
     <a class="btn" href="tel:410-602-5008">
